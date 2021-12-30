@@ -2,29 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>practice1229.html</title>
+    <title>회원가입</title>
     <style>
 
-    table, th, td {
+<!--    table, th, td {-->
 <!--        border:solid 2px black;-->
-        border-collapse: collapse;
-        padding: 6px
-    }
+<!--        border-collapse: collapse;-->
+<!--        padding: 6px-->
+<!--    }-->
 
     </style>
 </head>
 <body>
-    <table width="1000">
-        <tr bgcolor="#117AAF" >
-            <td><b><font color="white">사용자 정보입력</b></td>
+    <table border="0" width="1000" cellspacing="0" cellpadding="4">
+        <tr bgcolor="#117AAF">
+            <td><b><font size="2" color="white">사용자 정보입력</font></b></td>
         </tr>
         <tr>
             <td>안녕하세요. 희정이의 홈페이지를 자유롭게 이용하려면 회원가입을 하셔야 합니다.<br>
             아래의 사항들을 빠짐없이 기록해 주세요.<br></td>
         </tr>
     </table><br>
-    <table border="3">
-        <th>사용자 ID</th>
+    <form>
+    <table border="1" width="800" cellspacing="0" cellpadding="4">
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>사용자 ID</b></td>
+            <td colspan="3"><input type="text"> <input type="button" value="ID 중복확인"></td>
+        </tr>
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>비밀번호</b></td>
+            <td width="200"><input type="text"></td>
+            <td width="150" bgcolor="pink" align="center"><b>비밀번호 확인</b></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>사용자 이름</b></td>
+            <td colspan="3"><input type="text"></td>
+        </tr>
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>주민등록번호</b></td>
+            <td colspan="3"><input type="text"> - <input type="text"></td>
+        </tr>
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>생년월일</b></td>
+            <td><input type="text"></td>
+            <td width="150" bgcolor="pink" align="center"><b>성별</b></td>
+            <td><input type="radio" checked><b>남자</b> <input type="radio"><b>여자</b></td>
+        </tr>
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>우편번호</b></td>
+            <td colspan="3"><input type="text"> - <input type="text"> <input type="button" value="우편번호 검색"></td>
+        </tr>
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>주소</b></td>
+            <td colspan="3"><input type=text size="68"></td>
+        </tr>
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>나머지주소</b></td>
+            <td colspan="3"><input type="text"></td>
+        </tr>
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>E-Mail</b></td>
+            <td colspan="3"><input type="text"> @
+            <select>
+                <option>선택하세요</option>
+                <option>naver.com</option>
+                <option>daum.net</option>
+                <option>직접 입력</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td width="150" bgcolor="pink" align="center"><b>직업</b></td>
+            <td colspan="3">
+            <select>
+                <option>컴퓨터/정보통신</option>
+                <option>물류</option>
+                <option>보험설계사</option>
+                <option>직접 입력</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">
+                <input type="submit" value="등록">
+                <input type="reset" value="취소">
+            </td>
+        </tr>
     </table>
+    </form>
 </body>
 </html>
